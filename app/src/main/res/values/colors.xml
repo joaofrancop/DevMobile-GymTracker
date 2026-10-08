@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_main">#0E1116</color>
+    <color name="surface_card">#181D24</color>
+    <color name="surface_card_border">#28323E</color>
+
+    <!-- Brand / Accents -->
+    <color name="primary_green">#00E676</color>
+    <color name="primary_green_dark">#00B359</color>
+    <color name="primary_green_glow">#3300E676</color>
+    <color name="accent_cyan">#00E5FF</color>
+    <color name="accent_gold">#FFD700</color>
+
+    <!-- Typography -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+
+    <!-- Tags / Badges -->
+    <color name="tag_bg">#1D2A24</color>
+    <color name="tag_text">#00E676</color>
+</resources>

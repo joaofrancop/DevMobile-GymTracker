@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GymTracker</string>
+    <string name="welcome_title">Ready to\nTrain?</string>
+    <string name="welcome_subtitle">Acompanhe seus treinos, supere metas e registre sua evolução diária.</string>
+    <string name="btn_start_training">COMEÇAR TREINOS</string>
+    <string name="workouts_title">Meus Treinos</string>
+    <string name="weekly_streak_title">SEQUÊNCIA SEMANAL</string>
+    <string name="weekly_streak_value">6 Dias</string>
+    <string name="weekly_streak_desc">Você treinou 6 dos últimos 7 dias!</string>
+    <string name="last_session">Última sessão: Ontem</string>
+    <string name="my_routines">ROTINAS DE TREINO</string>
+    <string name="btn_new_workout">+ Novo Treino</string>
+</resources>
