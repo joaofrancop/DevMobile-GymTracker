@@ -47,7 +47,7 @@ class AgendaActivity : AppCompatActivity() {
         btnSobre.setOnClickListener {
             AlertDialog.Builder(this)
                 .setTitle("GymTracker - Sobre")
-                .setMessage("Aplicativo desenvolvido para a disciplina de Desenvolvimento Mobile.\n\nObjetivo: Gerenciamento e acompanhamento de treinos com persistência local SQLite e CRUD completo.")
+                .setMessage("Trabalho da disciplina Desenvolvimento Mobile.\n\nAgenda de treinos com SQLite e CRUD.")
                 .setPositiveButton("Fechar", null)
                 .show()
         }
@@ -72,17 +72,17 @@ class AgendaActivity : AppCompatActivity() {
         val treinos = banco.listar()
         val total = treinos.size
 
-        tvStreakValor.text = "$total ${if (total == 1) "TREINO" else "TREINOS"}"
+        tvStreakValor.text = "$total ${if (total == 1) "treino" else "treinos"}"
 
         if (treinos.isEmpty()) {
-            tvStreakDesc.text = "Nenhum treino cadastrado ainda."
-            tvUltimoTreino.text = "Nenhuma atividade registrada"
+            tvStreakDesc.text = "Nenhum registro no banco."
+            tvUltimoTreino.text = "Sem treinos"
             tvSemTreinos.visibility = View.VISIBLE
             return
         }
 
-        tvStreakDesc.text = "Você tem $total rotinas cadastradas."
-        tvUltimoTreino.text = "Último adicionado: ${treinos.first().nome}"
+        tvStreakDesc.text = "Total de $total treino(s) na agenda."
+        tvUltimoTreino.text = "Ultimo cadastro: ${treinos.first().nome}"
         tvSemTreinos.visibility = View.GONE
 
         val inflater = LayoutInflater.from(this)

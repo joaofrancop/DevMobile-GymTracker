@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Planeje e execute suas rotinas de exercícios"
+                android:text="Treinos salvos no banco local"
                 android:textColor="@color/text_gray"
                 android:textSize="14sp" />
 
@@ -83,7 +83,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bg_button_lime"
-                android:text="+ NOVO TREINO / EVENTO"
+                android:text="@string/btn_new_workout"
                 android:textColor="#0E1116"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -99,43 +99,24 @@
                 android:orientation="vertical"
                 android:padding="18dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:text="@string/weekly_streak_title"
+                    android:textColor="@color/primary_green"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="🔥"
-                        android:textSize="24sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/weekly_streak_title"
-                            android:textColor="@color/primary_green"
-                            android:textSize="11sp"
-                            android:textStyle="bold"
-                            android:letterSpacing="0.05" />
-
-                        <TextView
-                            android:id="@+id/tvStreakValor"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0 TREINOS"
-                            android:textColor="@color/text_white"
-                            android:textSize="22sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvStreakValor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="0 treinos"
+                    android:textColor="@color/text_white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvStreakDesc"
@@ -178,7 +159,7 @@
                 android:background="@drawable/bg_card_dark"
                 android:gravity="center"
                 android:padding="24dp"
-                android:text="Nenhum treino cadastrado ainda.\nToque em '+ NOVO TREINO / EVENTO' para começar!"
+                android:text="Nenhum treino cadastrado. Use o botao Novo Treino."
                 android:textColor="@color/text_muted"
                 android:textSize="14sp"
                 android:visibility="gone" />

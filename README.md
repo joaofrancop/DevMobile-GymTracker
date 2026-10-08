@@ -1,45 +1,45 @@
 # GymTracker
 
-Aplicativo Android desenvolvido para a disciplina **Desenvolvimento Mobile**.
+App Android da disciplina Desenvolvimento Mobile.
 
-Gerencia treinos com persistência local em **SQLite** e operações **CRUD** (criar, listar, editar e excluir).
+Armazena treinos no SQLite com CRUD: incluir, listar, editar e excluir.
 
 ## Funcionalidades
 
-- Tela inicial com apresentação do app
-- Agenda de treinos com listagem dinâmica
-- Formulário para cadastro e edição de treinos
-- Exclusão com diálogo de confirmação
-- Dados salvos localmente (`gymtracker.db`)
+- Tela inicial
+- Agenda com listagem de treinos
+- Formulario de cadastro e edicao
+- Exclusao com confirmacao
+- Banco local `gymtracker.db`
 
-## Telas (Activities)
+## Telas
 
-1. `MainActivity` — boas-vindas e acesso à agenda
-2. `AgendaActivity` — lista de treinos
-3. `NovoEventoActivity` — cadastro / edição
+1. `MainActivity`: entrada do app
+2. `AgendaActivity`: lista de treinos
+3. `NovoEventoActivity`: formulario
 
-Código do módulo avaliativo em `app/src/main/java/com/faculdade/gymtracker/aula/`.
+Codigo em `app/src/main/java/com/faculdade/gymtracker/aula/`.
 
 ## Requisitos
 
-- Android Studio (recomendado)
+- Android Studio
 - JDK 17
-- `minSdk` 24 · `targetSdk` 34
+- minSdk 24, targetSdk 34
 - Kotlin
 
-## Como executar
+## Executar
 
-1. Abra a pasta do projeto no Android Studio.
-2. Aguarde o Gradle sincronizar.
-3. Execute no emulador ou dispositivo (**Run** ▶).
+1. Abrir o projeto no Android Studio.
+2. Sincronizar o Gradle.
+3. Rodar no emulador ou aparelho.
 
-Via terminal (com `JAVA_HOME` configurado):
+Terminal (com JAVA_HOME configurado):
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-## Estrutura principal
+## Estrutura
 
 ```
 app/src/main/
@@ -57,6 +57,4 @@ app/src/main/
     item_treino.xml
 ```
 
-## Repositório
-
-[DevMobile-GymTracker](https://github.com/joaofrancop/DevMobile-GymTracker)
+Repositorio: https://github.com/joaofrancop/DevMobile-GymTracker
